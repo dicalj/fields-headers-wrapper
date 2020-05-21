@@ -1,5 +1,5 @@
 // required modules
-import collect from 'collect.js'
+import collect, { Collection } from 'collect.js'
 
 /**
  * This class describes a Fields.
@@ -23,5 +23,14 @@ export default class Fields {
     return [
 
     ]
+  }
+
+  /**
+   * Return a new fields collection with the specific
+   * fields options identified by name.
+   * @returns {Collection} fields collection.
+   */
+  static newWith(key = 'name', values = []) {
+    return new this().collect().whereIn(key, values).all()
   }
 }

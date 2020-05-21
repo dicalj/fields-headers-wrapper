@@ -24,4 +24,13 @@ export default class Headers {
 
     ]
   }
+
+  /**
+   * Return a new headers collection with the specific
+   * headers options identified by name.
+   * @returns {Collection} headers collection.
+   */
+  static newWith(key = 'value', values = []) {
+    return new this().collect().whereIn(key, values).all()
+  }
 }
