@@ -1,0 +1,18 @@
+{
+  "name": "fields-headers-wrapper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dicalj/fields-headers-wrapper.git",
+  "author": "diego callejas <d.callejas@innlab.cl>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.6",
+    "collect.js": "^4.25.0"
+  },
+  "scripts": {
+    "build": "babel src -d dist"
+  }
+}
