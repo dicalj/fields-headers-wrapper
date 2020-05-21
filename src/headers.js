@@ -1,5 +1,5 @@
 // required modules
-import collect, { Collection } from 'collect.js'
+import collect from 'collect.js'
 
 /**
  * This class describes a Headers.
