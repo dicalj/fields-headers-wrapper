@@ -1,7 +1,7 @@
 {
   "name": "fields-headers-wrapper",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "https://github.com/dicalj/fields-headers-wrapper.git",
   "author": "diego callejas <d.callejas@innlab.cl>",
   "license": "MIT",
