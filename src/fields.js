@@ -1,5 +1,5 @@
 // required modules
-import collect from 'collect.js'
+import collect, { Collection } from 'collect.js'
 
 /**
  * This class describes a Fields.
@@ -9,7 +9,7 @@ export default class Fields {
 
   /**
    * This class describes a Fields.
-   * @returns Fields (name)
+   * @returns {Collection} fields collection.
    */
   collect() {
     return collect(this.fields())

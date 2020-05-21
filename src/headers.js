@@ -1,5 +1,5 @@
 // required modules
-import collect from 'collect.js'
+import collect, { Collection } from 'collect.js'
 
 /**
  * This class describes a Headers.
@@ -9,7 +9,7 @@ export default class Headers {
 
   /**
    * This class describes a Headers.
-   * @returns Headers (name)
+   * @returns {Collection} headers collection.
    */
   collect() {
     return collect(this.headers())
