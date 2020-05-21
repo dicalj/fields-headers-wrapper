@@ -23,11 +23,11 @@ var Headers = function () {
   _createClass(Headers, [{
     key: "collect",
     value: function collect() {
-      return (0, _collect2["default"])(this.fields());
+      return (0, _collect2["default"])(this.headers());
     }
   }, {
-    key: "fields",
-    value: function fields() {
+    key: "headers",
+    value: function headers() {
       return [];
     }
   }]);

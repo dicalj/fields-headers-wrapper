@@ -2,19 +2,22 @@
 import collect from 'collect.js'
 
 /**
- * 
+ * This class describes a Fields.
+ * @class Fields (name)
  */
 export default class Fields {
 
   /**
-   * 
+   * This class describes a Fields.
+   * @returns Fields (name)
    */
   collect() {
     return collect(this.fields())
   }
 
   /**
-   * 
+   * Define the fields options.
+   * @returns {Array} fields options.
    */
   fields() {
     return [
