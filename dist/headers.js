@@ -30,6 +30,13 @@ var Headers = function () {
     value: function headers() {
       return [];
     }
+  }], [{
+    key: "newWith",
+    value: function newWith() {
+      var key = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'value';
+      var values = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+      return new this().collect().whereIn(key, values).all();
+    }
   }]);
 
   return Headers;
