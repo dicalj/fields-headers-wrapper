@@ -12,10 +12,10 @@
     "@babel/preset-env": "^7.9.6",
     "babel-preset-minify": "^0.5.1"
   },
-  "scripts": {
-    "build": "babel src -d dist"
-  },
   "dependencies": {
     "collect.js": "^4.25.0"
+  },
+  "scripts": {
+    "build": "babel src -d dist"
   }
 }

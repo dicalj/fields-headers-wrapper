@@ -1,6 +1,6 @@
-# Fields Headers Wrapper
+# fields-headers-wrapper
 
-This is an example file with default selections.
+This is an helper lib with default class to manipulate collections of fields and headers definitions.
 
 ## Install
 
