@@ -58,10 +58,10 @@ Use the defined class
 // import required module
 import ExampleFields from './example.fields'
 
-//
+// a new example fields create variant instance
 var exampleFields = ExampleFields.toCreate()
 
-//
+// output example fields
 console.log(exampleFields)
 
 // output:
