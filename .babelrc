@@ -1,7 +1,8 @@
 {
   "comments": false,
   "presets": [
-    ["@babel/preset-env", { "useBuiltIns": "entry", corejs: 2 }]
+    ["@babel/preset-env", { "useBuiltIns": "entry", corejs: 2 }],
+    ["minify"]
   ],
   "plugins": [
     ["@babel/plugin-proposal-class-properties", { "loose": true }]
