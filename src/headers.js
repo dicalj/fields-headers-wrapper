@@ -34,7 +34,7 @@ export default class Headers {
    * 
    * @returns {Collection} headers collection.
    */
-  static newWith(key = 'value', values = []) {
+  static reduce(key = 'value', values = []) {
     return new this().collect().whereIn(key, values).all()
   }
 }

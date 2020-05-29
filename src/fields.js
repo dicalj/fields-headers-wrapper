@@ -34,7 +34,7 @@ export default class Fields {
    * 
    * @returns {Collection} fields collection.
    */
-  static newWith(key = 'name', values = []) {
+  static reduce(key = 'name', values = []) {
     return new this().collect().whereIn(key, values).all()
   }
 }
