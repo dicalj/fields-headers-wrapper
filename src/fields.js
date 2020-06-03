@@ -29,12 +29,21 @@ export default class Fields {
   }
 
   /**
+   * Return a new fields collection.
+   * 
+   * @returns {Collection} fields collection.
+   */
+  static init() {
+    return new this().collect()
+  }
+
+  /**
    * Return a new fields collection with the specific
    * fields options identified by name.
    * 
    * @returns {Collection} fields collection.
    */
   static reduce(key = 'name', values = []) {
-    return new this().collect().whereIn(key, values).all()
+    return this.init().whereIn(key, values).all()
   }
 }
