@@ -2,23 +2,23 @@
 import Collection from './collection'
 
 /**
- * This class describes a Fields.
+ * This class describes a collection of fields used for forms or other situations that require input fields.
  * @augments Collection
  * @class Fields
  */
 class Fields extends Collection {
 
   /**
-   * This class describes a Fields.
-   * @returns {Collection} fields collection.
+   * Initialize a new collect.js instance with the specified fields.
+   * @returns {Collection} collection collect.js instance.
    */
   collect() {
     return collect(this.fields())
   }
 
   /**
-   * Define the fields options.
-   * @returns {Array} fields options.
+   * Get the raw fields items of class instance.
+   * @returns {Array} raw items.
    */
   fields() {
     return []

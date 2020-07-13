@@ -1,4 +1,4 @@
-# fields-headers-wrapper
+# Fields headers wrapper
 
 This is an helper lib with default class to manipulate collections of fields and headers definitions (use collect.js).
 
@@ -15,12 +15,11 @@ Define the fields class
 // import required module
 import { Fields } from 'fields-headers-wrapper'
 
-//
+// example fields collection class
 export default class ExampleFields extends Fields {
 
   /**
    * Define the fields options.
-   * 
    * @returns {Array} fields options.
    */
   fields() {
@@ -44,11 +43,10 @@ export default class ExampleFields extends Fields {
 
   /**
    * Returns the specific collection to create variant.
-   * 
    * @return {Array} collect.js array extend instance.
    */
   static toCreate() {
-    return new this().collect().newWith('name', ['name'])
+    return this.reduce('name', ['name'])
   }
 }
 ```
@@ -80,4 +78,4 @@ console.log(exampleFields)
 
 ## License
 
-MIT © dicaljs
+© dicaljs

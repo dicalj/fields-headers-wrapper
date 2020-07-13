@@ -77,23 +77,23 @@ Return a new items collection with the specified items identified by name.
 <a name="new_Fields_new"></a>
 
 ### new Fields()
-This class describes a Fields.
+This class describes a collection of fields used for forms or other situations that require input fields.
 
 <a name="Fields+collect"></a>
 
 ### fields.collect() ⇒ [<code>Collection</code>](#Collection)
-This class describes a Fields.
+Initialize a new collect.js instance with the specified fields.
 
 **Kind**: instance method of [<code>Fields</code>](#Fields)  
 **Overrides**: [<code>collect</code>](#Collection+collect)  
-**Returns**: [<code>Collection</code>](#Collection) - fields collection.  
+**Returns**: [<code>Collection</code>](#Collection) - collection collect.js instance.  
 <a name="Fields+fields"></a>
 
 ### fields.fields() ⇒ <code>Array</code>
-Define the fields options.
+Get the raw fields items of class instance.
 
 **Kind**: instance method of [<code>Fields</code>](#Fields)  
-**Returns**: <code>Array</code> - fields options.  
+**Returns**: <code>Array</code> - raw items.  
 <a name="Collection+items"></a>
 
 ### fields.items() ⇒ <code>Array</code>
@@ -116,23 +116,23 @@ Get the raw items of class instance.
 <a name="new_Headers_new"></a>
 
 ### new Headers()
-This class describes a Headers.
+This class describes a collection of headers used for tables or other situations that require columns headers.
 
 <a name="Headers+collect"></a>
 
 ### headers.collect() ⇒ [<code>Collection</code>](#Collection)
-This class describes a Headers.
+Initialize a new collect.js instance with the specified headers.
 
 **Kind**: instance method of [<code>Headers</code>](#Headers)  
 **Overrides**: [<code>collect</code>](#Collection+collect)  
-**Returns**: [<code>Collection</code>](#Collection) - headers collection.  
+**Returns**: [<code>Collection</code>](#Collection) - collection collect.js instance.  
 <a name="Headers+headers"></a>
 
 ### headers.headers() ⇒ <code>Array</code>
-Define the headers options.
+Get the raw headers items of class instance.
 
 **Kind**: instance method of [<code>Headers</code>](#Headers)  
-**Returns**: <code>Array</code> - headers options.  
+**Returns**: <code>Array</code> - raw items.  
 <a name="Collection+items"></a>
 
 ### headers.items() ⇒ <code>Array</code>

@@ -2,23 +2,23 @@
 import Collection from './collection'
 
 /**
- * This class describes a Headers.
+ * This class describes a collection of headers used for tables or other situations that require columns headers.
  * @augments Collection
  * @class Headers
  */
 class Headers extends Collection {
 
   /**
-   * This class describes a Headers.
-   * @returns {Collection} headers collection.
+   * Initialize a new collect.js instance with the specified headers.
+   * @returns {Collection} collection collect.js instance.
    */
   collect() {
     return collect(this.headers())
   }
 
   /**
-   * Define the headers options.
-   * @returns {Array} headers options.
+   * Get the raw headers items of class instance.
+   * @returns {Array} raw items.
    */
   headers() {
     return []
