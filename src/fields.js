@@ -3,6 +3,7 @@ import Collection from './collection'
 
 /**
  * This class describes a Fields.
+ * @augments Collection
  * @class Fields
  */
 class Fields extends Collection {

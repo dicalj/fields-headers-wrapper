@@ -3,6 +3,7 @@ import Collection from './collection'
 
 /**
  * This class describes a Headers.
+ * @augments Collection
  * @class Headers
  */
 class Headers extends Collection {
