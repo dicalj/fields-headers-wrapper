@@ -1,16 +1,14 @@
 // required modules
-import collect from 'collect.js'
+import Collection from './collection'
 
 /**
  * This class describes a Headers.
- * 
  * @class Headers (name)
  */
-export default class Headers {
+export default class Headers extends Collection {
 
   /**
    * This class describes a Headers.
-   * 
    * @returns {Collection} headers collection.
    */
   collect() {
@@ -19,22 +17,9 @@ export default class Headers {
 
   /**
    * Define the headers options.
-   * 
    * @returns {Array} headers options.
    */
   headers() {
-    return [
-
-    ]
-  }
-
-  /**
-   * Return a new headers collection with the specific
-   * headers options identified by name.
-   * 
-   * @returns {Collection} headers collection.
-   */
-  static reduce(key = 'value', values = []) {
-    return new this().collect().whereIn(key, values).all()
+    return []
   }
 }
