@@ -3,7 +3,7 @@ import Collection from './collection'
 
 /**
  * This class describes a Fields.
- * @class Fields (name)
+ * @class Fields
  */
 export default class Fields extends Collection {
 

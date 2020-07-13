@@ -5,7 +5,7 @@ import collect from 'collect.js'
  * This class describes a collection or array container using the collect.js library.
  * @class Collection
  */
-export default class Collection {
+class Collection {
 
   /**
    * Initialize a new collect.js instance with the specified items.
@@ -33,7 +33,9 @@ export default class Collection {
 
   /**
    * Return a new items collection with the specified items identified by name.
-   * @returns {Array} fields collection.
+   * @param   {String}  [key=name]  - field option key.
+   * @param   {Array}   [values=[]] - values of field key option.
+   * @returns {Array}                 fields collection.
    */
   static reduce(key = 'name', values = []) {
     return this.init().whereIn(key, values).all()
@@ -41,4 +43,4 @@ export default class Collection {
 }
 
 // export module
-// export default Collection
+export default Collection

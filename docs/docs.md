@@ -3,23 +3,15 @@
 <dl>
 <dt><a href="#Collection">Collection</a></dt>
 <dd></dd>
+<dt><a href="#Fields">Fields</a></dt>
+<dd></dd>
+<dt><a href="#Headers">Headers</a></dt>
+<dd></dd>
 </dl>
 
 ## Functions
 
 <dl>
-<dt><a href="#collect">collect()</a> ⇒ <code><a href="#Collection">Collection</a></code></dt>
-<dd><p>Initialize a new collect.js instance with the specified items.</p>
-</dd>
-<dt><a href="#init">init()</a> ⇒ <code><a href="#Collection">Collection</a></code></dt>
-<dd><p>Return a new items collection instance.</p>
-</dd>
-<dt><a href="#items">items()</a> ⇒ <code>Array</code></dt>
-<dd><p>Get the raw items of class instance.</p>
-</dd>
-<dt><a href="#reduce">reduce()</a> ⇒ <code>Array</code></dt>
-<dd><p>Return a new items collection with the specified items identified by name.</p>
-</dd>
 <dt><a href="#collect">collect()</a> ⇒ <code><a href="#Collection">Collection</a></code></dt>
 <dd><p>This class describes a Fields.</p>
 </dd>
@@ -38,39 +30,73 @@
 
 ## Collection
 **Kind**: global class  
+
+* [Collection](#Collection)
+    * [new Collection()](#new_Collection_new)
+    * _instance_
+        * [.collect()](#Collection+collect) ⇒ [<code>Collection</code>](#Collection)
+        * [.items()](#Collection+items) ⇒ <code>Array</code>
+    * _static_
+        * [.init()](#Collection.init) ⇒ [<code>Collection</code>](#Collection)
+        * [.reduce([key], [values])](#Collection.reduce) ⇒ <code>Array</code>
+
 <a name="new_Collection_new"></a>
 
 ### new Collection()
 This class describes a collection or array container using the collect.js library.
 
-<a name="collect"></a>
+<a name="Collection+collect"></a>
 
-## collect() ⇒ [<code>Collection</code>](#Collection)
+### collection.collect() ⇒ [<code>Collection</code>](#Collection)
 Initialize a new collect.js instance with the specified items.
 
-**Kind**: global function  
+**Kind**: instance method of [<code>Collection</code>](#Collection)  
 **Returns**: [<code>Collection</code>](#Collection) - collection collect.js instance.  
-<a name="init"></a>
+<a name="Collection+items"></a>
 
-## init() ⇒ [<code>Collection</code>](#Collection)
-Return a new items collection instance.
-
-**Kind**: global function  
-**Returns**: [<code>Collection</code>](#Collection) - items collection.  
-<a name="items"></a>
-
-## items() ⇒ <code>Array</code>
+### collection.items() ⇒ <code>Array</code>
 Get the raw items of class instance.
 
-**Kind**: global function  
+**Kind**: instance method of [<code>Collection</code>](#Collection)  
 **Returns**: <code>Array</code> - raw items.  
-<a name="reduce"></a>
+<a name="Collection.init"></a>
 
-## reduce() ⇒ <code>Array</code>
+### Collection.init() ⇒ [<code>Collection</code>](#Collection)
+Return a new items collection instance.
+
+**Kind**: static method of [<code>Collection</code>](#Collection)  
+**Returns**: [<code>Collection</code>](#Collection) - items collection.  
+<a name="Collection.reduce"></a>
+
+### Collection.reduce([key], [values]) ⇒ <code>Array</code>
 Return a new items collection with the specified items identified by name.
 
-**Kind**: global function  
+**Kind**: static method of [<code>Collection</code>](#Collection)  
 **Returns**: <code>Array</code> - fields collection.  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [key] | <code>String</code> | <code>name</code> | field option key. |
+| [values] | <code>Array</code> | <code>[]</code> | values of field key option. |
+
+<a name="Fields"></a>
+
+## Fields
+**Kind**: global class  
+<a name="new_Fields_new"></a>
+
+### new Fields()
+This class describes a Fields.
+
+<a name="Headers"></a>
+
+## Headers
+**Kind**: global class  
+<a name="new_Headers_new"></a>
+
+### new Headers()
+This class describes a Headers.
+
 <a name="collect"></a>
 
 ## collect() ⇒ [<code>Collection</code>](#Collection)

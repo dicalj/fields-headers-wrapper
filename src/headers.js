@@ -3,7 +3,7 @@ import Collection from './collection'
 
 /**
  * This class describes a Headers.
- * @class Headers (name)
+ * @class Headers
  */
 export default class Headers extends Collection {
 
