@@ -5,7 +5,7 @@ import Collection from './collection'
  * This class describes a Headers.
  * @class Headers
  */
-export default class Headers extends Collection {
+class Headers extends Collection {
 
   /**
    * This class describes a Headers.
@@ -23,3 +23,6 @@ export default class Headers extends Collection {
     return []
   }
 }
+
+// export module
+export default Headers

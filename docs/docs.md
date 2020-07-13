@@ -9,23 +9,6 @@
 <dd></dd>
 </dl>
 
-## Functions
-
-<dl>
-<dt><a href="#collect">collect()</a> ⇒ <code><a href="#Collection">Collection</a></code></dt>
-<dd><p>This class describes a Fields.</p>
-</dd>
-<dt><a href="#fields">fields()</a> ⇒ <code>Array</code></dt>
-<dd><p>Define the fields options.</p>
-</dd>
-<dt><a href="#collect">collect()</a> ⇒ <code><a href="#Collection">Collection</a></code></dt>
-<dd><p>This class describes a Headers.</p>
-</dd>
-<dt><a href="#headers">headers()</a> ⇒ <code>Array</code></dt>
-<dd><p>Define the headers options.</p>
-</dd>
-</dl>
-
 <a name="Collection"></a>
 
 ## Collection
@@ -83,45 +66,57 @@ Return a new items collection with the specified items identified by name.
 
 ## Fields
 **Kind**: global class  
+
+* [Fields](#Fields)
+    * [new Fields()](#new_Fields_new)
+    * [.collect()](#Fields+collect) ⇒ [<code>Collection</code>](#Collection)
+    * [.fields()](#Fields+fields) ⇒ <code>Array</code>
+
 <a name="new_Fields_new"></a>
 
 ### new Fields()
 This class describes a Fields.
 
+<a name="Fields+collect"></a>
+
+### fields.collect() ⇒ [<code>Collection</code>](#Collection)
+This class describes a Fields.
+
+**Kind**: instance method of [<code>Fields</code>](#Fields)  
+**Returns**: [<code>Collection</code>](#Collection) - fields collection.  
+<a name="Fields+fields"></a>
+
+### fields.fields() ⇒ <code>Array</code>
+Define the fields options.
+
+**Kind**: instance method of [<code>Fields</code>](#Fields)  
+**Returns**: <code>Array</code> - fields options.  
 <a name="Headers"></a>
 
 ## Headers
 **Kind**: global class  
+
+* [Headers](#Headers)
+    * [new Headers()](#new_Headers_new)
+    * [.collect()](#Headers+collect) ⇒ [<code>Collection</code>](#Collection)
+    * [.headers()](#Headers+headers) ⇒ <code>Array</code>
+
 <a name="new_Headers_new"></a>
 
 ### new Headers()
 This class describes a Headers.
 
-<a name="collect"></a>
+<a name="Headers+collect"></a>
 
-## collect() ⇒ [<code>Collection</code>](#Collection)
-This class describes a Fields.
-
-**Kind**: global function  
-**Returns**: [<code>Collection</code>](#Collection) - fields collection.  
-<a name="fields"></a>
-
-## fields() ⇒ <code>Array</code>
-Define the fields options.
-
-**Kind**: global function  
-**Returns**: <code>Array</code> - fields options.  
-<a name="collect"></a>
-
-## collect() ⇒ [<code>Collection</code>](#Collection)
+### headers.collect() ⇒ [<code>Collection</code>](#Collection)
 This class describes a Headers.
 
-**Kind**: global function  
+**Kind**: instance method of [<code>Headers</code>](#Headers)  
 **Returns**: [<code>Collection</code>](#Collection) - headers collection.  
-<a name="headers"></a>
+<a name="Headers+headers"></a>
 
-## headers() ⇒ <code>Array</code>
+### headers.headers() ⇒ <code>Array</code>
 Define the headers options.
 
-**Kind**: global function  
+**Kind**: instance method of [<code>Headers</code>](#Headers)  
 **Returns**: <code>Array</code> - headers options.  

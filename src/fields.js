@@ -5,7 +5,7 @@ import Collection from './collection'
  * This class describes a Fields.
  * @class Fields
  */
-export default class Fields extends Collection {
+class Fields extends Collection {
 
   /**
    * This class describes a Fields.
@@ -23,3 +23,6 @@ export default class Fields extends Collection {
     return []
   }
 }
+
+// export module
+export default Fields
