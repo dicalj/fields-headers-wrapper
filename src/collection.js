@@ -3,7 +3,7 @@ import collect from 'collect.js'
 
 /**
  * This class describes a collection or array container using the collect.js library.
- * @class Collection (name)
+ * @class Collection
  */
 export default class Collection {
 
@@ -39,3 +39,6 @@ export default class Collection {
     return this.init().whereIn(key, values).all()
   }
 }
+
+// export module
+// export default Collection
