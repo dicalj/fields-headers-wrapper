@@ -32,7 +32,7 @@ export default class ExampleFields extends Fields {
         },
       },
       {
-        name: 'lastname',
+        name: 'last_name',
         type: 'text-field',
         prop: {
           label: 'Last name'
