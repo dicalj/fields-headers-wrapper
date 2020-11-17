@@ -1,142 +1,138 @@
+# docs
+
 ## Classes
 
-<dl>
-<dt><a href="#Collection">Collection</a></dt>
-<dd></dd>
-<dt><a href="#Fields">Fields</a> ⇐ <code><a href="#Collection">Collection</a></code></dt>
-<dd></dd>
-<dt><a href="#Headers">Headers</a> ⇐ <code><a href="#Collection">Collection</a></code></dt>
-<dd></dd>
-</dl>
-
-<a name="Collection"></a>
+[Collection](docs.md#Collection)[Fields](docs.md#Fields) ⇐ [`Collection`](docs.md#Collection)[Headers](docs.md#Headers) ⇐ [`Collection`](docs.md#Collection)
 
 ## Collection
-**Kind**: global class  
 
-* [Collection](#Collection)
-    * [new Collection()](#new_Collection_new)
-    * _instance_
-        * [.collect()](#Collection+collect) ⇒ [<code>Collection</code>](#Collection)
-        * [.items()](#Collection+items) ⇒ <code>Array</code>
-    * _static_
-        * [.init()](#Collection.init) ⇒ [<code>Collection</code>](#Collection)
-        * [.reduce([key], [values])](#Collection.reduce) ⇒ <code>Array</code>
+**Kind**: global class
 
-<a name="new_Collection_new"></a>
+* [Collection](docs.md#Collection)
+  * [new Collection\(\)](docs.md#new_Collection_new)
+  * _instance_
+    * [.collect\(\)](docs.md#Collection+collect) ⇒ [`Collection`](docs.md#Collection)
+    * [.items\(\)](docs.md#Collection+items) ⇒ `Array`
+  * _static_
+    * [.init\(\)](docs.md#Collection.init) ⇒ [`Collection`](docs.md#Collection)
+    * [.reduce\(\[key\], \[values\]\)](docs.md#Collection.reduce) ⇒ `Array`
 
-### new Collection()
+### new Collection\(\)
+
 This class describes a collection or array container using the collect.js library.
 
-<a name="Collection+collect"></a>
+### collection.collect\(\) ⇒ [`Collection`](docs.md#Collection)
 
-### collection.collect() ⇒ [<code>Collection</code>](#Collection)
 Initialize a new collect.js instance with the specified items.
 
-**Kind**: instance method of [<code>Collection</code>](#Collection)  
-**Returns**: [<code>Collection</code>](#Collection) - collection collect.js instance.  
-<a name="Collection+items"></a>
+**Kind**: instance method of [`Collection`](docs.md#Collection)  
+**Returns**: [`Collection`](docs.md#Collection) - collection collect.js instance.  
 
-### collection.items() ⇒ <code>Array</code>
+
+### collection.items\(\) ⇒ `Array`
+
 Get the raw items of class instance.
 
-**Kind**: instance method of [<code>Collection</code>](#Collection)  
-**Returns**: <code>Array</code> - raw items.  
-<a name="Collection.init"></a>
+**Kind**: instance method of [`Collection`](docs.md#Collection)  
+**Returns**: `Array` - raw items.  
 
-### Collection.init() ⇒ [<code>Collection</code>](#Collection)
+
+### Collection.init\(\) ⇒ [`Collection`](docs.md#Collection)
+
 Return a new items collection instance.
 
-**Kind**: static method of [<code>Collection</code>](#Collection)  
-**Returns**: [<code>Collection</code>](#Collection) - items collection.  
-<a name="Collection.reduce"></a>
+**Kind**: static method of [`Collection`](docs.md#Collection)  
+**Returns**: [`Collection`](docs.md#Collection) - items collection.  
 
-### Collection.reduce([key], [values]) ⇒ <code>Array</code>
+
+### Collection.reduce\(\[key\], \[values\]\) ⇒ `Array`
+
 Return a new items collection with the specified items identified by name.
 
-**Kind**: static method of [<code>Collection</code>](#Collection)  
-**Returns**: <code>Array</code> - fields collection.  
+**Kind**: static method of [`Collection`](docs.md#Collection)  
+**Returns**: `Array` - fields collection.
 
 | Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [key] | <code>String</code> | <code>name</code> | field option key. |
-| [values] | <code>Array</code> | <code>[]</code> | values of field key option. |
+| :--- | :--- | :--- | :--- |
+| \[key\] | `String` | `name` | field option key. |
+| \[values\] | `Array` | `[]` | values of field key option. |
 
-<a name="Fields"></a>
+## Fields ⇐ [`Collection`](docs.md#Collection)
 
-## Fields ⇐ [<code>Collection</code>](#Collection)
 **Kind**: global class  
-**Extends**: [<code>Collection</code>](#Collection)  
+**Extends**: [`Collection`](docs.md#Collection)
 
-* [Fields](#Fields) ⇐ [<code>Collection</code>](#Collection)
-    * [new Fields()](#new_Fields_new)
-    * [.collect()](#Fields+collect) ⇒ [<code>Collection</code>](#Collection)
-    * [.fields()](#Fields+fields) ⇒ <code>Array</code>
-    * [.items()](#Collection+items) ⇒ <code>Array</code>
+* [Fields](docs.md#Fields) ⇐ [`Collection`](docs.md#Collection)
+  * [new Fields\(\)](docs.md#new_Fields_new)
+  * [.collect\(\)](docs.md#Fields+collect) ⇒ [`Collection`](docs.md#Collection)
+  * [.fields\(\)](docs.md#Fields+fields) ⇒ `Array`
+  * [.items\(\)](docs.md#Collection+items) ⇒ `Array`
 
-<a name="new_Fields_new"></a>
+### new Fields\(\)
 
-### new Fields()
 This class describes a collection of fields used for forms or other situations that require input fields.
 
-<a name="Fields+collect"></a>
+### fields.collect\(\) ⇒ [`Collection`](docs.md#Collection)
 
-### fields.collect() ⇒ [<code>Collection</code>](#Collection)
 Initialize a new collect.js instance with the specified fields.
 
-**Kind**: instance method of [<code>Fields</code>](#Fields)  
-**Overrides**: [<code>collect</code>](#Collection+collect)  
-**Returns**: [<code>Collection</code>](#Collection) - collection collect.js instance.  
-<a name="Fields+fields"></a>
+**Kind**: instance method of [`Fields`](docs.md#Fields)  
+**Overrides**: [`collect`](docs.md#Collection+collect)  
+**Returns**: [`Collection`](docs.md#Collection) - collection collect.js instance.  
 
-### fields.fields() ⇒ <code>Array</code>
+
+### fields.fields\(\) ⇒ `Array`
+
 Get the raw fields items of class instance.
 
-**Kind**: instance method of [<code>Fields</code>](#Fields)  
-**Returns**: <code>Array</code> - raw items.  
-<a name="Collection+items"></a>
+**Kind**: instance method of [`Fields`](docs.md#Fields)  
+**Returns**: `Array` - raw items.  
 
-### fields.items() ⇒ <code>Array</code>
+
+### fields.items\(\) ⇒ `Array`
+
 Get the raw items of class instance.
 
-**Kind**: instance method of [<code>Fields</code>](#Fields)  
-**Returns**: <code>Array</code> - raw items.  
-<a name="Headers"></a>
+**Kind**: instance method of [`Fields`](docs.md#Fields)  
+**Returns**: `Array` - raw items.  
 
-## Headers ⇐ [<code>Collection</code>](#Collection)
+
+## Headers ⇐ [`Collection`](docs.md#Collection)
+
 **Kind**: global class  
-**Extends**: [<code>Collection</code>](#Collection)  
+**Extends**: [`Collection`](docs.md#Collection)
 
-* [Headers](#Headers) ⇐ [<code>Collection</code>](#Collection)
-    * [new Headers()](#new_Headers_new)
-    * [.collect()](#Headers+collect) ⇒ [<code>Collection</code>](#Collection)
-    * [.headers()](#Headers+headers) ⇒ <code>Array</code>
-    * [.items()](#Collection+items) ⇒ <code>Array</code>
+* [Headers](docs.md#Headers) ⇐ [`Collection`](docs.md#Collection)
+  * [new Headers\(\)](docs.md#new_Headers_new)
+  * [.collect\(\)](docs.md#Headers+collect) ⇒ [`Collection`](docs.md#Collection)
+  * [.headers\(\)](docs.md#Headers+headers) ⇒ `Array`
+  * [.items\(\)](docs.md#Collection+items) ⇒ `Array`
 
-<a name="new_Headers_new"></a>
+### new Headers\(\)
 
-### new Headers()
 This class describes a collection of headers used for tables or other situations that require columns headers.
 
-<a name="Headers+collect"></a>
+### headers.collect\(\) ⇒ [`Collection`](docs.md#Collection)
 
-### headers.collect() ⇒ [<code>Collection</code>](#Collection)
 Initialize a new collect.js instance with the specified headers.
 
-**Kind**: instance method of [<code>Headers</code>](#Headers)  
-**Overrides**: [<code>collect</code>](#Collection+collect)  
-**Returns**: [<code>Collection</code>](#Collection) - collection collect.js instance.  
-<a name="Headers+headers"></a>
+**Kind**: instance method of [`Headers`](docs.md#Headers)  
+**Overrides**: [`collect`](docs.md#Collection+collect)  
+**Returns**: [`Collection`](docs.md#Collection) - collection collect.js instance.  
 
-### headers.headers() ⇒ <code>Array</code>
+
+### headers.headers\(\) ⇒ `Array`
+
 Get the raw headers items of class instance.
 
-**Kind**: instance method of [<code>Headers</code>](#Headers)  
-**Returns**: <code>Array</code> - raw items.  
-<a name="Collection+items"></a>
+**Kind**: instance method of [`Headers`](docs.md#Headers)  
+**Returns**: `Array` - raw items.  
 
-### headers.items() ⇒ <code>Array</code>
+
+### headers.items\(\) ⇒ `Array`
+
 Get the raw items of class instance.
 
-**Kind**: instance method of [<code>Headers</code>](#Headers)  
-**Returns**: <code>Array</code> - raw items.  
+**Kind**: instance method of [`Headers`](docs.md#Headers)  
+**Returns**: `Array` - raw items.
+
